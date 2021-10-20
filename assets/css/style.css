@@ -3,6 +3,9 @@ body {
     padding: 10px;
     font-family: Helvetica, Arial, sans-serif;
 }
+section .title-block {
+    width: 100%;
+}
 
 /* header */
 header {
@@ -18,12 +21,14 @@ header h1 {
     color: green;
     margin: auto 0;
     align-items: center;
-    
+    flex: 1 30%;
+    text-align: center;
 }
 
 /* nav */
 header nav {
     margin: 7px 0;
+    flex: 2 70%;
 }
 header nav ul {
     display: flex;
@@ -31,6 +36,9 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+}
+header nav ul li {
+    padding: 3px 0;
 }
 header nav ul li a {
     margin: 0 30px;
@@ -56,16 +64,43 @@ header nav ul li a {
 
 section h2 {
     text-align: center;
-    padding: 10px;
 }
 .bio {
     background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px 0;
 }
+
+/* previous work */
 .work {
     background-color: lightskyblue;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
 }
+#first {
+    height: 337px;
+}
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 550px;
+    gap: 10px 10px;
+}
+.example {
+    width: 40%;
+    height: 150px;
+    border: solid 3px royalblue;
+    margin: 10px;
+}
+
+
+
 .contact {
     background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px 0;
 }
 footer {
     background-color: lightgreen;
