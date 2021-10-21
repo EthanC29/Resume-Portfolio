@@ -1,8 +1,18 @@
+:root {
+    --section-color: lightskyblue;
+}
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
 body {
     background-color: lightcyan;
     padding: 10px;
-    font-family: Helvetica, Arial, sans-serif;
 }
+h2 {
+    border-bottom: solid 3px black;
+    padding-bottom: 20px;
+}
+
 section .title-block {
     width: 100%;
 }
@@ -17,7 +27,7 @@ header {
 }
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     color: green;
     margin: auto 0;
     align-items: center;
@@ -47,6 +57,9 @@ header nav ul li a {
     text-decoration: none;
     color: green;
 }
+header nav ul li a:hover {
+    color: rgb(0, 66, 0);
+}
 
 /* hero */
 .hero {
@@ -60,45 +73,75 @@ header nav ul li a {
     width: 210px;
     height: 210px;
     margin: 30px;
+    border-radius: 20px;
 }
 
 section h2 {
     text-align: center;
 }
+
+/* about me */
 .bio {
-    background-color: lightskyblue;
+    background-color: var(--section-color);
     padding: 10px;
     margin: 10px 0;
+}
+.bio p {
+    text-align: justify;
+    padding: 10px;
 }
 
 /* previous work */
 .work {
-    background-color: lightskyblue;
+    background-color: var(--section-color);
     display: block;
     padding: 10px;
     margin: 10px 0;
 }
 #first {
-    height: 337px;
+    width: 96%;
+    height: 200px;
 }
 .container-main {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 550px;
+    flex-direction: row;
+    justify-content: center;
     gap: 10px 10px;
 }
 .example {
-    width: 40%;
+    width: 45%;
     height: 150px;
     border: solid 3px royalblue;
-    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.example:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.example:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.container-main #first {
+    background-image: url("../images/work-1.jpg");
+}
+.container-main #second {
+    background-image: url("../images/work-2.jpg");
+}
+.container-main #third {
+    background-image: url("../images/work-3.jpg");
+}
+.container-main #fourth {
+    background-image: url("../images/work-4.jpg");
+}
+.container-main #fifth {
+    background-image: url("../images/work-5.jpg");
 }
 
 
 
 .contact {
-    background-color: lightskyblue;
+    background-color: var(--section-color);
     padding: 10px;
     margin: 10px 0;
 }
@@ -115,4 +158,7 @@ footer a {
     font-size: 20px;
     text-decoration: none;
     color: green;
+}
+footer a:hover {
+    color: rgb(0, 66, 0);
 }
