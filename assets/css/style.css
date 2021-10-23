@@ -98,10 +98,6 @@ section h2 {
     padding: 10px;
     margin: 10px 0;
 }
-#first {
-    width: 96%;
-    height: 200px;
-}
 .container-main {
     display: flex;
     flex-wrap: wrap;
@@ -109,35 +105,41 @@ section h2 {
     justify-content: center;
     gap: 10px 10px;
 }
-.example {
-    width: 45%;
+.container-main a {
+    width: 300px;
     height: 150px;
-    border: solid 3px royalblue;
+    border: solid 5px royalblue;
     padding: 10px;
     border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-.example:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.example:active {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.container-main #first {
+#first {
     background-image: url("../images/work-1.jpg");
+    width: 96%;
+    height: 200px;
 }
-.container-main #second {
+#second {
     background-image: url("../images/work-2.jpg");
 }
-.container-main #third {
+#third {
     background-image: url("../images/work-3.jpg");
 }
-.container-main #fourth {
+#fourth {
     background-image: url("../images/work-4.jpg");
 }
-.container-main #fifth {
+#fifth {
     background-image: url("../images/work-5.jpg");
 }
-
+.container-main a:hover {
+    border: solid 5px rgb(133, 153, 214);
+}
+.container-main a:active {
+    border: solid 5px rgb(33, 80, 221);
+}
 
 
 .contact {
