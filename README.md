@@ -21,3 +21,6 @@ Portfolio detailing the previous work of Zhen Fu Chong, as well as his contact i
 
 ## Credit
 Code snippets referenced from *Run Buddy 2.0* by UofT SCS Coding Bootcamp.
+
+## Link to Page
+[ZFC Portfolio](https://ethanc29.github.io/Resume-Portfolio/)
