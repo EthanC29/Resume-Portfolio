@@ -21,6 +21,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
 }
 header h1 {
     font-weight: bold;
@@ -111,7 +113,7 @@ section h2 {
     gap: 10px 10px;
 }
 .container-main a {
-    width: 300px;
+    width: 20%;
     height: 150px;
     border: solid 5px royalblue;
     padding: 10px;
@@ -124,8 +126,8 @@ section h2 {
 }
 #first {
     background-image: url("../images/work-1.jpg");
-    width: 100%;
-    height: 200px;
+    width: 90%;
+    height: 300px;
 }
 #second {
     background-image: url("../images/work-2.jpg");
@@ -161,7 +163,6 @@ section h2 {
     background-color: var(--contact-bg);
     color: white;
     border-radius: 20px;
-    border: solid 1px var(--contact-bg);
     height: 420px;
 }
 .contact-content iframe {
@@ -245,21 +246,37 @@ footer a:hover {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header h1 a {
-      
+    .container-main a {
+        width: 40%;
     }
-  }
+    #first {
+        width: 85%;
+    }
+}
   
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    header h1 {
-      
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .social, .contact-form, .map {
+        height: 100%;
     }
-  }
+    .contact-content {
+        flex-direction: column;
+    }
+    header {
+        position: static;
+    }
+    
+}
   
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    header h1 {
-      
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .social, .contact-form, .map {
+        height: 100%;
     }
-  }
+    .container-main a {
+        width: 100%;
+    }
+    #first {
+        width: 100%;
+    }
+}
