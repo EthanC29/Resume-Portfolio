@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <title>Zhen Fu Chong's Portfolio</title>
     </head>
@@ -11,7 +12,7 @@
 
         <!-- navigation -->
         <header id="header">
-            <h1>Zhen Fu Chong</h1>
+            <h1><a href="/">Zhen Fu Chong</a></h1>
             <nav>
                 <ul>
                     <li>
@@ -43,9 +44,7 @@
 
         <!-- previous work -->
         <section id="recent-projects" class="work">
-            <div class="title-block">
-                <h2>Recent Projects</h2>
-            </div>
+            <h2>Recent Projects</h2>
             <div class="container-main">
                 <a href="./first-project-test.html" target="_blank" id="first">
                     <h3>Placeholder 1</h3>
@@ -68,6 +67,71 @@
         <!-- contact info -->
         <section id="contact-info" class="contact">
             <h2>Contact Info</h2>
+
+            <div class="contact-content">
+
+                <div class="social">
+                    <h3>Social Links</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.facebook.com/ethanzfchong">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/zhenfuchong/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:16472992608">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/></svg>
+                                +1(647)299-2608
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ethanchong@gmail.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                                ethanchong@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="contact-form">
+                    <h3>Contact Me</h3>
+                    <form>
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" placeholder="Contact Name" />
+            
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" placeholder="Contact Email" />
+            
+                        <label for="contact-number">Phone Number</label>
+                        <input type="tel" id="contact-number" placeholder="Contact Phone Number" />
+            
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+            
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.077216470617!2d-79.198944184653!3d43.79201075146187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4da74da31093d%3A0x8efa2a636c24210!2s18%20Tams%20Rd%2C%20Scarborough%2C%20ON%20M1E%205K6!5e0!3m2!1sen!2sca!4v1635104522859!5m2!1sen!2sca"
+                        frameborder="0" style="border:0" allowfullscreen="">
+                    </iframe>
+                    <address>
+                        18 Tams Rd <br />
+                        Toronto, ON, Canada <br />
+                        M1E 5K6
+                    </address>
+                </div>
+
+            </div>
         </section>
 
         <!-- footer -->
