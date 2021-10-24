@@ -196,27 +196,30 @@ section h2 {
     background-color: rgba(255,255,255, 0.75);
 }
 .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
+    background-color: white;
     outline: none;
 }
 .contact-form button {
     width: 100%;
     border: none;
     background: rgb(23, 63, 150);
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
 }
 .contact-form button:hover {
-    color: rgb(255, 255, 255);
+    color: white;
     background: rgb(18, 53, 128);
 }
 .social-links {
     list-style: none;
 }
-.social-links li a {
+.social-links div {
+    margin: 10px 0;
+}
+.social-links div a {
     text-decoration: none;
     color: white;
 }
