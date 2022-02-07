@@ -125,21 +125,21 @@ section h2 {
     font-weight: bold;
 }
 #first {
-    background-image: url("../images/work-1.jpg");
+    background-image: url("../images/Project-Pictures/Global-News-Finder.jpg");
     width: 90%;
     height: 300px;
 }
 #second {
-    background-image: url("../images/work-2.jpg");
+    background-image: url("../images/Project-Pictures/Cars-Inventory-DB.png");
 }
 #third {
-    background-image: url("../images/work-3.jpg");
+    background-image: url("../images/Project-Pictures/work-3-placeholder.jpg");
 }
 #fourth {
-    background-image: url("../images/work-4.jpg");
+    background-image: url("../images/Project-Pictures/work-4-placeholder.jpg");
 }
 #fifth {
-    background-image: url("../images/work-5.jpg");
+    background-image: url("../images/Project-Pictures/work-5-placeholder.jpg");
 }
 .container-main a:hover {
     border: solid 5px rgb(29, 71, 196);
